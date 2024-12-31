@@ -1,6 +1,6 @@
 import React from "react";
-import { Stack, Typography, useTheme } from "@mui/material";
-import { Label, Paper } from "../../core";
+import { Stack, useTheme } from "@mui/material";
+import { Paper } from "../../core";
 
 interface IterativeProps<T> {
   array: T[];
@@ -26,12 +26,6 @@ export const Iterative = <T extends number | string>({
           </Paper>
         ))}
       </Stack>
-
-      <Label name="Current Item" sx={{ ml: -2, mt: 2 }}>
-        <Typography variant="button" ml={2}>
-          {String(inputArray[activeIndex])}
-        </Typography>
-      </Label>
     </>
   );
 };

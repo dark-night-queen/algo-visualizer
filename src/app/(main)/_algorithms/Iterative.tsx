@@ -9,6 +9,7 @@ import {
   Iterative as IterativeAnimation,
   Output,
 } from "@/lib/components/composite";
+import { Label } from "@/lib/components";
 
 interface IterativeProps<T> {
   n?: number;
@@ -50,6 +51,12 @@ export const Iterative = <T extends number | string>({
           activeIndex={activeIndex}
         />
       </Output>
+
+      <Label name="Current Item">
+        <Typography variant="button">
+          {String(inputArray[activeIndex])}
+        </Typography>
+      </Label>
     </>
   );
 };
