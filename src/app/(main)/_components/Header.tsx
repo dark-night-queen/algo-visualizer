@@ -9,7 +9,7 @@ export const Header = () => {
       justifyContent={"space-between"}
       alignItems={"center"}
     >
-      <Typography variant="h4">Algorithm Visualizer</Typography>
+      <Typography variant="h6">Algorithm Visualizer</Typography>
 
       <Button variant="contained" color="primary">
         Visualize

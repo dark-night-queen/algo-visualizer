@@ -1,3 +1,5 @@
+"use client";
+
 import React, { PropsWithChildren } from "react";
 import { Header } from "./_components/Header";
 import { Stack } from "@mui/material";
